@@ -1,5 +1,5 @@
 .embed{
-    width: 800px;
+    width: 100%;
     height: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -9,14 +9,14 @@
 
 @media  screen and (max-width:934px) {
     .embed{
-        width: 500px;
-        height: 400px;
+        width: 100%;
+        height: 500px;
     }
 }
 
 @media  screen and (max-width:450px) {
     .embed{
-        width: 320px;
+        width: 100%;
         height: 320px;
     }
 }
