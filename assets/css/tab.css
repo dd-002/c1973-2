@@ -14,7 +14,6 @@ button {
 
 .tabs {
   display: flex;
-
   height: 80vh;
 }
 
@@ -69,7 +68,7 @@ button {
   width: 75%;
   color: #000000;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .tab-content {
@@ -102,7 +101,7 @@ button {
   .tab-buttons {
     width: 100%;
     height: auto;
-    background-color: rgba(1, 4, 9, 0.75);
+    background-color: #081828;
     backdrop-filter: blur(8px);
   }
   
