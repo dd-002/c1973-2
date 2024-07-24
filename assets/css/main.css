@@ -2243,7 +2243,7 @@ ol {
   margin-top: 40px;
 }
 
-.services .single-service {
+ .single-service {
   min-height: 300px;
   margin-top: 30px;
   border-radius: 20px;
@@ -2258,14 +2258,14 @@ ol {
   border-bottom: 3px solid transparent;
 }
 
-.services .single-service:hover {
+ .single-service:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   border-top-color: #0e735b;
   border-bottom-color: #0e735b;
 }
 
-.services .single-service .main-icon {
+ .single-service .main-icon {
   height: 65px;
   width: 65px;
   line-height: 65px;
@@ -2278,7 +2278,7 @@ ol {
   display: inline-block;
 }
 
-.services .single-service .text-title {
+ .single-service .text-title {
   color: #081828;
   font-size: 18px;
   line-height: 28px;
@@ -2287,7 +2287,7 @@ ol {
   margin-bottom: 15px;
 }
 
-.services .single-service p {
+.single-service p {
   line-height: 26px;
   font-size: 15px;
 }
