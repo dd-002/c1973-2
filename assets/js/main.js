@@ -22,7 +22,6 @@ Author: GrayGrids
     window.onscroll = function () {
         var header_navbar = document.querySelector(".navbar-area");
         var sticky = header_navbar.offsetTop;
-
         var logo = document.querySelector('.navbar-brand img')
         if (window.pageYOffset > sticky) {
           header_navbar.classList.add("sticky");
