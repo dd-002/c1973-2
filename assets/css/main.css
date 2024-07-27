@@ -1704,6 +1704,14 @@ ol {
 }
 
 /*===== NAVBAR =====*/
+
+
+@media only screen  and (max-width: 991px) {
+  .log1 {
+    display: none;
+  }
+}
+
 .navbar-area {
   width: 100%;
   z-index: 99;
