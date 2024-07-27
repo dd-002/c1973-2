@@ -25,7 +25,7 @@ button {
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: #081828;
+  background-color: #0e735b;
   padding-top: 1rem;
   padding-bottom: 1rem;
   justify-content: center;
@@ -40,12 +40,14 @@ button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #64748b;
+  color: white;
   text-transform: uppercase;
 }
 
 .tab-button.active {
-  color: #e2e8f0;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .tab-button span:not(.line) {
@@ -91,7 +93,7 @@ button {
     min-width:  100%;
     overflow-x: scroll;
     height: auto;
-    background-color: #081828;
+    background-color: #0e735b;
     backdrop-filter: blur(8px);
     margin: 0;
   }
@@ -102,7 +104,6 @@ button {
 }
 
 @media screen and (max-width: 846px) {
-  
   .tab-buttons {
     margin: auto;
     justify-content:unset;
