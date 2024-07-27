@@ -14,17 +14,21 @@ button {
 
 .tabs {
   display: flex;
+  flex-direction: column;
   height: 80vh;
+  margin: auto;
 }
 
 .tab-buttons {
   display: flex;
-  flex-direction: column;
-  width: 25%;
+  flex-direction: row;
+  width: 100%;
   position: sticky;
   top: 0;
   background-color: #081828;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: center;
 }
 
 .tab-button {
@@ -44,23 +48,10 @@ button {
   color: #e2e8f0;
 }
 
-.tab-button.active .line {
-  width: 4rem;
-  background-color: #e2e8f0;
-}
-
 .tab-button span:not(.line) {
   line-height: 1rem;
   font-size: .75rem;
   letter-spacing: 0.1rem;
-}
-
-.line {
-  height: 1px;
-  width: 2rem;
-  background-color: #64748b;
-  display: block;
-  transition: all 140ms cubic-bezier(.4,0,.2,1);
 }
 
 .tab-contents {
@@ -69,6 +60,7 @@ button {
   color: #000000;
   height: 100%;
   overflow-y: hidden;
+  margin: auto;
 }
 
 .tab-content {
@@ -94,18 +86,26 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .tabs {
-    flex-direction: column;
-  }
   
   .tab-buttons {
-    width: 100%;
+    min-width:  100%;
+    overflow-x: scroll;
     height: auto;
     background-color: #081828;
     backdrop-filter: blur(8px);
+    margin: 0;
   }
   
   .tab-contents {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 846px) {
+  
+  .tab-buttons {
+    margin: auto;
+    justify-content:unset;
+  }
+
 }
