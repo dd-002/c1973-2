@@ -2753,3 +2753,15 @@ ol {
 .footer .copyright-area p a:hover {
   color: #0e735b;
 }
+
+
+#car{
+  width: 70%; margin: auto;
+}
+
+
+@media (max-width: 935px) {
+  #car {
+    min-width: 100%;
+  }
+}
