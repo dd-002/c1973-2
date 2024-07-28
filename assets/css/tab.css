@@ -71,6 +71,7 @@ button {
   max-height: 0;
   overflow: hidden;
   transform: translateY(20px);
+  width: 100%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -86,6 +87,7 @@ button {
   max-height: 100%;
   transition: all 140ms cubic-bezier(.4,0,.2,1);
   transform: translateY(0px);
+
 
 }
 
