@@ -29,9 +29,9 @@ Author: GrayGrids
           logo.src = 'ass/lbh.png';
           logo2.src='ass/iitbb.svg'
         } else {
-          header_navbar.classList.remove("sticky");
-          logo.src = 'ass/lwh.png';
-          logo2.src='ass/iitb.svg'
+        //   header_navbar.classList.remove("sticky");
+          logo.src = 'ass/lbh.png';
+          logo2.src='ass/iitbb.svg';
         }
 
         // show or hide the back-top-top button
