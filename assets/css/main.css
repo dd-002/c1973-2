@@ -2029,12 +2029,11 @@ ol {
 ========================================*/
 .hero-area {
   position: relative;
-  background-image: url("../../ass/cover.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #081828;
-  z-index: 0;
+  background-color: #081828;;
+  margin-top: 5%;
 }
 
 /* @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2050,23 +2049,11 @@ ol {
 } */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .hero-area {
-    padding: 150px 0 100px 0;
-    background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(
-'/ass/cover.jpg');
-  }
+
 }
 
 @media (max-width: 767px) {
-  .hero-area {
-    padding: 110px 0 80px 0;
-    background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(
-'/ass/cover.jpg');
-  }
+
 }
 
 .hero-area .hero-content {
@@ -2074,7 +2061,6 @@ ol {
   position: relative;
   z-index: 1;
   text-align: left;
-  padding: 240px 0 140px 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
