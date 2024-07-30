@@ -24,7 +24,7 @@ button {
   flex-direction: row;
   width: 100%;
   position: sticky;
-  background-color: #0e735b;
+  background-color: #081828;
   padding-top: 1rem;
   padding-bottom: 1rem;
   justify-content: center;
@@ -102,7 +102,7 @@ button {
     min-width:  100%;
     overflow-x: scroll;
     height: auto;
-    background-color: #0e735b;
+    background-color: #081828;
     backdrop-filter: blur(8px);
     margin-top: 5%;
   }
