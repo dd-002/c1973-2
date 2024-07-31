@@ -25,13 +25,13 @@ Author: GrayGrids
         var logo = document.querySelector('.navbar-brand img')
         var logo2 = document.querySelector('.log1 img')
         if (window.pageYOffset > sticky) {
-            header_navbar.classList.add("bg-change");
-          header_navbar.classList.add("sticky");
+            // header_navbar.classList.add("bg-change");
+        //   header_navbar.classList.add("sticky");
 
-          logo.src = 'ass/lwh.png';
-          logo2.src='ass/iitb.svg';
+          logo.src = 'ass/lbh.png';
+          logo2.src='ass/iitbb.svg';
         } else {
-          header_navbar.classList.remove("sticky");
+        //   header_navbar.classList.remove("sticky");
           header_navbar.classList.remove("bg-change");
 
           logo.src = 'ass/lbh.png';

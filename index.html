@@ -20,11 +20,10 @@
     <link rel="stylesheet" href="assets/css/logocarousel.css">
     <link rel="stylesheet" href="assets/css/tab.css">
     <link rel="stylesheet" href="assets/css/contact.css">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
 
 </head>
 
-<body>
+<body id="body">
     <!--[if lte IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -45,7 +44,7 @@
     <!-- /End Preloader -->
 
     <!-- Start Header Area -->
-    <header class="header navbar-area">
+    <header class="header navbar-area sticky" id="header">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -69,9 +68,9 @@
 
 
 
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg" >
                             <a class="navbar-brand" href="index.html">
-                                <img src="ass/lwh.png" alt="Logo">
+                                <img src="ass/lbh.png" alt="Logo">
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -91,26 +90,9 @@
                                             style="font-size: 15px; font-weight: 700;">About</a>
                                     </li>
                                     <li class="nav-item" id="nav-in">
-                                        <a class="dd-menu collapsed" href="#insights" data-bs-toggle="collapse"
-                                            data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
-                                            aria-expanded="false" aria-label="Toggle navigation"
-                                            style="font-size: 15px; font-weight: 700;">Insights</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-1">
-                                            <li class="nav-item "><a style="font-size: 15px; font-weight: 700;"
-                                                    data-tab="1" id="nav-tab-button1">Events</a></li>
-                                            <li class="nav-item "><a style="font-size: 15px; font-weight: 700;"
-                                                    data-tab="2" id="nav-tab-button2">Message</a></li>
-                                            <li class="nav-item "><a style="font-size: 15px; font-weight: 700;"
-                                                    data-tab="3" id="nav-tab-button3">Blogs</a></li>
-                                            <li class="nav-item "><a style="font-size: 15px; font-weight: 700;"
-                                                    data-tab="4" id="nav-tab-button4">Research Papers</a></li>
-                                            <li class="nav-item "><a style="font-size: 15px; font-weight: 700;"
-                                                    data-tab="5" id="nav-tab-button5">White Papers</a>
-                                            <li class="nav-item "><a style="font-size: 15px; font-weight: 700;"
-                                                    data-tab="6" id="nav-tab-button6">LinkedIn Posts</a></li>
-                                            <li class="nav-item "><a style="font-size: 15px; font-weight: 700;"
-                                                    data-tab="6" id="nav-tab-button7">Careers</a></li>
-                                        </ul>
+                                        <a href="#insights" aria-label="Toggle navigation"
+                                        style="font-size: 15px; font-weight: 700;">Insights</a>
+                    
                                     </li>
                                     <li class="nav-item">
                                         <a href="#team" aria-label="Toggle navigation"
@@ -123,7 +105,7 @@
                                 </ul>
                             </div> <!-- navbar collapse -->
                             <div class="log1">
-                                <a href="https://www.iitb.ac.in"> <img src="ass/iitb.svg" alt="Logo" width="60px"> </a>
+                                <a href="https://www.iitb.ac.in"> <img src="ass/iitbb.svg" alt="Logo" width="60px"> </a>
                             </div>
                         </nav>
 
@@ -137,7 +119,7 @@
 
     <!-- Start Hero Area -->
     <section class="hero-area">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12 col-12">
                     <div class="hero-content">
@@ -154,168 +136,74 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/ass/cover.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/ass/cover.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/ass/cover.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
     <!-- End Hero Area -->
 
-    <!-- Start Services Area -->
-    <div class="services section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
+    <!-- End Services Area -->
 
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">About Us</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">The C1973 EV Power Train Laboratory aims to be a
+    <section class="about section" id="about" style="background-color:  white">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-8 col-14">
+                    <div class="content wow fadeInRight" data-wow-delay=".4s" \>
+                        <h2>About Us</h2>
+                        <p>The C1973 EV Power Train Laboratory aims to be a
                             game-changer for India's EV industry. By harnessing the expertise of IIT Bombay's faculty
                             and innovators, the lab will spearhead the development of electric vehicle technology for
                             light commercial vehicles, a key segment driving India's EV market. This focus on
                             indigenization will not only strengthen India's self-reliance in EV technology but also
                             propel the nation towards its goal of becoming a global leader in the production of small
                             EVs.</p>
-                        <div class="button" style="margin-top: 20px;">
-                            <a href="about-us.html" class="btn">Know More</a>
-                        </div>
-                    </div>
+                            <div class="button" style="margin-top: 10px;">
+                                <a href="about-us.html" class="btn">Know More</a>
+                            </div>
+                    </div>  
                 </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- End Services Area -->
-
-    <section class="about section">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <div class="col-lg-6 col-12">
-                    <div class="content wow fadeInRight" data-wow-delay=".4s">
-                        <h2>Overview</h2>
-                        <p>The EV Power Train Lab, nestled within the institute’s expansive grounds, holds the promise
-                            of being a game-changer, fostering advancements in teaching and research within the realm of
-                            Electric Vehicles (EVs). The lab would be the core of all EV activities at IIT Bombay,
-                            focusing on the production of small vehicles (2/3/4 wheelers) in the country.</p>
-                        <p>The goal for the EV Power Train Lab is to become one of the leading R&D laboratories globally
-                            for EV Power Trains in small vehicles. It aims to be the preferred source of R&D for firms
-                            in India, enabling innovation and global technology competitiveness. The lab also aspires to
-                            play a pivotal role in manpower training through internal and professional programs,
-                            solidifying IIT Bombay’s position at the forefront of sustainable technology </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-4 col-10">
                     <div class="image wow fadeInLeft" data-wow-delay=".2s">
-                        <img src="ass/powertrain.webp" alt="#">
+                        <img src="ass/auto2.png"    alt="#">
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-
-
-                <div>
-                    <div class="content wow fadeInRight" data-wow-delay=".4s">
-                        <h3 style="font-size: larger; font-weight: 800; margin-top: 30px;">We are open for projects in
-                        </h3>
-
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="single-service">
-                        <div class="main-icon">
-                            <i class="lni lni-grid-alt"></i>
-                        </div>
-                        <h4 class="text-title">Advanced Battery Management </h4>
-                        <p>Advanced battery management systems. This
-                            would include the characterization of battery
-                            cells and accordingly determining the charging
-                            current, to extend the overall operational life
-                            and safety of the battery. Research will also
-                            focus on battery pack design and its life
-                            estimation. </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="single-service">
-                        <div class="main-icon">
-                            <i class="lni lni-keyword-research"></i>
-                        </div>
-                        <h4 class="text-title">Advanced Motor Controller</h4>
-                        <p>GaN based motor controllers for electric 2 & 3-
-                            wheelers with reduced sensor requirements.
-                            Using advanced technology in power
-                            electronics, to reduce the size and increase
-                            efficiency of powertrain.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="single-service">
-                        <div class="main-icon">
-                            <i class="lni lni-vector"></i>
-                        </div>
-                        <h4 class="text-title">Magnetl-less motors</h4>
-                        <p>Design and development of magnet-less
-                            motors for electric 2 & 3-wheelers. This will
-                            reduce dependence on imported permanent
-                            magnets and make Indian EV sustainable.</p>
-                    </div>
-                </div>
-
             </div>
 
-            <div class="row" style="margin: 30px;">
-                <div class="col-lg-6 col-12">
-                    <div class="content wow fadeInRight" data-wow-delay=".4s">
-                        <h3 style="font-size: larger; font-weight: 800;">Strengths</h3>
-                        <ul>
-                            <li>Complimentary IITB facilities: IITB Research Park, SINE Incubation Center, and other
-                                fabrication
-                                facilities.</li>
-                            <li>
-                                Existing core departments like Electrical Engineering, Mechanical Engineering, Chemical
-                                Engineering, Aerospace Engineering.
-                            </li>
-                            <li>
-                                Established centers like NCPRE, IIT Bombay-Ohio State Frontier Center
-                            </li>
-                            <li>
-                                The Innovative Concept Award 2023, IEEE International Future Energy Challenge (IFEC)
-                                -2023 at
-                                Hannover, Germany
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="content wow fadeInRight" data-wow-delay=".4s">
-                        <h3 style="font-size: larger; font-weight: 800;">Overview</h3>
-                        <ul>
-                            <li>Advancing R&D in EV Powertrain through new
-                                & futuristic technologies</li>
-                            <li>
-                                Translational Research Level (TRL) - TRL 5-7
-                            </li>
-                            <li>
-                                Training human resources to advance the
-                                Indian EV ecosystem
-                            </li>
-                            <li>
-                                Design and deliver specialized courses in EVs
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-
-
-
-            </div>
     </section>
 
     <section id="car">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="ass/c1973/lab1.jpg" class="d-block w-100" alt="...">
@@ -343,8 +231,93 @@
         </div>
     </section>
 
-    <section class="section">
 
+    <section class="about section" id="services">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-10">
+                    <div class="image wow fadeInLeft" data-wow-delay=".2s">
+                        <img src="ass/scooter.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-14">
+                    <div class="content wow fadeInRight" data-wow-delay=".4s">
+                        <h2>Services</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium sint labore accusamus neque hic, obcaecati quidem non pariatur doloribus eius nihil voluptas odio possimus voluptatibus tenetur dolore sit maxime saepe est dolorem reiciendis. Ea illum quod quia recusandae quasi!</p>
+                            <div class="button" style="margin-top: 10px;">
+                                <a href="services.html" class="btn">Know More</a>
+                            </div>
+                    </div>  
+                </div>
+
+            </div>
+            </div>
+
+    </section>
+
+    
+    <section class="about section" id="insights">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-8 col-14">
+                    <div class="content wow fadeInRight" data-wow-delay=".4s">
+                        <h2>Insights</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium sint labore accusamus neque hic, obcaecati quidem non pariatur doloribus eius nihil voluptas odio possimus voluptatibus tenetur dolore sit maxime saepe est dolorem reiciendis. Ea illum quod quia recusandae quasi!</p>
+                            <div class="button" style="margin-top: 10px;">
+                                <a href="insights.html" class="btn">Know More</a>
+                            </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 col-10">
+                    <div class="image wow fadeInLeft" data-wow-delay=".2s">
+                        <img src="ass/auto1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+    </section>
+
+
+
+    <!-- Start About Area -->
+    <section class="about section" id="team">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12">
+                    <div class="image wow fadeInLeft" data-wow-delay=".2s">
+                        <img src="ass/team.jpeg" style="width: 100%;" alt="#">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="content wow fadeInRight" data-wow-delay=".4s">
+                        <h4>The Team</h4>
+                        <h2>Meet the minds behind the future of electric vehicles! ⚡ </h2>
+                        <p>Our team at the C1973 EV POWER TRAIN LAB, IIT Bombay is a powerhouse of experience, with our
+                            exceptional faculty members and Principal Investigator Prof. Sandeep Anand providing
+                            guidance and mentorship to our talented students and interns. This dynamic mix fosters an
+                            environment of continuous learning and groundbreaking innovation in electric vehicles.</p>
+                        <p>Here's a glimpse of our dedicated team ✨ </p>
+                        <div class="button" style="margin-top: 20px;">
+                            <a href="/team.html" class="btn">Know More about The team</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team 1 - Bootstrap Brain Component -->
+
+
+
+    <!-- End About Area -->
+
+
+
+<!-- Industrial Collaborations -->
+    <section class="section">
         <div class="container">
             <div class="row align-items-center">
 
@@ -376,10 +349,6 @@
             </div>
 
         </div>
-
-
-
-
         <script>
             var copy = document.querySelector(".logos-slide").cloneNode(true);
             document.querySelector(".logos").appendChild(copy);
@@ -387,184 +356,34 @@
     </section>
 
 
+    
 
-
-
-
-    <section id="insights">
-        <div class="tabs">
-            <header class="tab-buttons">
-                <button class="tab-button" data-tab="1" id="1">
-                    <span>Events</span>
-                </button>
-                <button class="tab-button" data-tab="2" id="2">
-                    <span>Message</span>
-                </button>
-                <button class="tab-button" data-tab="3" id="3">
-                    <span>Blogs</span>
-                </button>
-                <button class="tab-button" data-tab="4" id="4">
-                    <span>Research</span>
-                </button>
-                <button class="tab-button" data-tab="5" id="5">
-                    <span>White Paper</span>
-                </button>
-                <button class="tab-button" data-tab="6" id="6">
-                    <span>LinkedIn</span>
-                </button>
-                <button class="tab-button" data-tab="7" id="7">
-                    <span>Careers</span>
-                </button>
-            </header>
-            <div class="tab-contents">
-                <div class="tab-content" data-tab="1">
-                    <h2>Events</h2>
-                    <p>
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/ass/cover.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 style="color: white;">First slide label</h5>
-                                    <p>Some representative placeholder content for the first slide.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/ass/cover.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 style="color: white;">Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/ass/cover.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 style="color: white;">Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    </p>
-                </div>
-                <div class="tab-content marked" data-tab="2">
-                    <h2>Message from the team</h2>
-                    <zero-md src="/markdowns/markdown-sample.md" style="border-radius: 10px; ">
-                        <template>
-                            <link rel="stylesheet"
-                                href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11/styles/github.min.css" />
-                        </template>
-                    </zero-md>
-                </div>
-                <div class="tab-content marked" data-tab="3">
-                    <h2>Blogs</h2>
-                    <!-- <zero-md src="/markdowns/markdown-sample.md" style="border-radius: 10px; ">
-                        <template>
-                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11/styles/github.min.css" />
-                        </template>
-                    </zero-md> -->
-
-
-
-                    <div class="row" id="blog">
-                    
-                    </div>
-
-
-
-
-
-                </div>
-                <div class="tab-content marked" data-tab="4">
-                    <h2>Research</h2>
-                    <zero-md src="/markdowns/markdown-sample.md" style="border-radius: 10px; ">
-                        <template>
-                            <link rel="stylesheet"
-                                href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11/styles/github.min.css" />
-                        </template>
-                    </zero-md>
-                </div>
-                <div class="tab-content marked" data-tab="5">
-                    <h2>White Paper</h2>
-                    <zero-md src="/markdowns/markdown-sample.md" style="border-radius: 10px; ">
-                        <template>
-                            <link rel="stylesheet"
-                                href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11/styles/github.min.css" />
-                        </template>
-                    </zero-md>
-                </div>
-                <div class="tab-content" data-tab="6">
-                    <h2>Linked In</h2>
-                    <div class="embed" style="height: 60vh;">
-                        <div class='sk-ww-linkedin-page-post' data-embed-id='25440627'></div>
-                    </div>
-                </div>
-                <div class="tab-content marked" data-tab="7">
-                    <h2>Careers</h2>
-                    <zero-md src="/markdowns/markdown-sample.md" style="border-radius: 10px; ">
-                        <template>
-                            <link rel="stylesheet"
-                                href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11/styles/github.min.css" />
-                        </template>
-                    </zero-md>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-
-    <!-- Start About Area -->
-    <section class="about section" id="team">
+    <section class="call-action " style="background-color: white">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-12">
-                    <div class="image wow fadeInLeft" data-wow-delay=".2s">
-                        <img src="ass/team.jpeg" alt="#">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="content wow fadeInRight" data-wow-delay=".4s">
-                        <h4>The Team</h4>
-                        <h2>Meet the minds behind the future of electric vehicles! ⚡ </h2>
-                        <p>Our team at the C1973 EV POWER TRAIN LAB, IIT Bombay is a powerhouse of experience, with our
-                            exceptional faculty members and Principal Investigator Prof. Sandeep Anand providing
-                            guidance and mentorship to our talented students and interns. This dynamic mix fosters an
-                            environment of continuous learning and groundbreaking innovation in electric vehicles.</p>
-                        <p>Here's a glimpse of our dedicated team ✨ </p>
-                        <div class="button" style="margin-top: 20px;">
-                            <a href="/team.html" class="btn">Know More about The team</a>
+            <div class="inner-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-9 col-14">
+                        <div class="text">
+                            <h2>Career And Opportunities
+
+                            </h2>
+                            <p style="display: block;margin-top: 10px;">There are many Opportunities to work Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci tempora voluptas odio omnis, inventore quas a aut sint error nam fuga quidem, voluptates eveniet dignissimos magnam id? Error, numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nam dolor molestiae dolore sint omnis architecto autem voluptatum consequatur qui provident rem consequuntur accusamus, a quas, corrupti suscipit libero labore! </p>
+                            <div class="button" style="margin-top: 20px;">
+                                <a href="/career.html" class="btn">See Opportunities</a>
+                            </div>
                         </div>
                     </div>
-
+                    <div class="col-lg-4 col-md-3 col-10">
+                        <div class="button">
+                            <img src="ass/career.avif" >
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Team 1 - Bootstrap Brain Component -->
 
 
-
-    <!-- End About Area -->
 
 
 
@@ -599,19 +418,13 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <div class="image wow fadeInLeft" data-wow-delay=".2s">
-                        <img src="ass/evill.webp" alt="#">
+                    <div class="image wow fadeInLeft" data-wow-delay=".2s" >
+                        <img src="ass/evill.webp" style="width: 100%;" alt="#"   >
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
 
 
 
@@ -712,9 +525,7 @@
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/nav.js"></script>
-    <script type="module" src="assets/js/blog.js"></script>
-    <script src='https://widgets.sociablekit.com/linkedin-page-posts/widget.js' async defer></script>
+    <script src="assets/js/responsive.js"></script>
 </body>
 
 </html>
