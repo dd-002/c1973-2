@@ -110,6 +110,10 @@ button {
   .tab-contents {
     width: 100%;
   }
+  .tab-content.active {
+    width: 100%;
+  
+  }
 }
 
 @media screen and (max-width: 846px) {
