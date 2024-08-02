@@ -1,0 +1,8 @@
+/*******************************************************
+ * Copyright (C) 2024 IIT Bombay Power Train Lab 
+ * 
+ * The contents of this repo is the sole property of Power Train Lab, IIT Bombay
+ * 
+ * The code  can not be copied and/or distributed without the express
+ * permission of ESHWAY and IIT Power Train Lab
+ *******************************************************/
