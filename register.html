@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Insights</title>
+    <title>Registration</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="ass/iitb.svg" />
@@ -68,19 +68,14 @@
         <!-- Author: FormBold Team -->
         <!-- Learn More: https://formbold.com -->
         <div class="formbold-form-wrapper">
-            <div class="formbold-event-wrapper">
+            <div class="formbold-event-wrapper" >
                 <span>EV Symposium</span>
                 <h3>Industry-Academia collaboration in the area of electric vehicles </h3>
                 <img src="/ass/events/event1.jpeg">
-                <h4>Key Highlights</h4>
-                <ul>
-                    <li>Break out sessions</li>
-                    <li>I-App Launch</li>
-                    <li>Panel Discussions</li>
-                    <li>Tech Exhibitions</li>
-                    <li>Exclusive EV Lab Tour</li>
-                </ul>
 
+
+            </div>
+            <div>
                 <div class="formbold-event-details">
                     <h5>Event Details</h5>
 
@@ -151,96 +146,98 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+                <form action="" method="POST" id="regForm">
+                    <h2 class="formbold-form-title">Register now</h2>
 
-            <form action="" method="POST" id="regForm">
-                <h2 class="formbold-form-title">Register now</h2>
 
-             
-                <div class="formbold-input-flex">
-                    <div>
+                    <div class="formbold-input-flex">
+                        <div>
 
-                        <label for="lastname" class="formbold-form-label"> Name* </label>
-                        <input type="text" name="lastname" id="lastname" placeholder="" class="formbold-form-input" />
+                            <label for="lastname" class="formbold-form-label"> Name* </label>
+                            <input type="text" name="lastname" id="lastname" placeholder=""
+                                class="formbold-form-input" />
+                        </div>
+
                     </div>
 
-                </div>
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="email" class="formbold-form-label"> Email* </label>
+                            <input type="email" name="email" id="email" class="formbold-form-input" />
+                        </div>
+                        <div>
+                            <label for="phone" class="formbold-form-label"> Phone number* </label>
+                            <input type="text" name="phone" id="phone" class="formbold-form-input" />
+                        </div>
+                    </div>
 
-                <div class="formbold-input-flex">
-                    <div>
-                        <label for="email" class="formbold-form-label"> Email* </label>
-                        <input type="email" name="email" id="email" class="formbold-form-input" />
-                    </div>
-                    <div>
-                        <label for="phone" class="formbold-form-label"> Phone number* </label>
-                        <input type="text" name="phone" id="phone" class="formbold-form-input" />
-                    </div>
-                </div>
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="affiliation" class="formbold-form-label"> Select your Affiliation* </label>
 
-                <div class="formbold-input-flex">
-                    <div>
-                        <label for="affiliation" class="formbold-form-label"> Select your Affiliation* </label>
+                            <select name="affiliation" id="affiliation" class="formbold-form-input">
+                                <option value="Industry">Industry</option>
+                                <option value="Academy">Academy</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="company" class="formbold-form-label"> Company/Institute* </label>
+                            <input type="text" name="company" id="company" class="formbold-form-input" />
+                        </div>
+                    </div>
 
-                        <select name="affiliation" id="affiliation" class="formbold-form-input">
-                            <option value="Industry">Industry</option>
-                            <option value="Academy">Academy</option>
-                        </select>
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="designation" class="formbold-form-label"> Designations* </label>
+                            <input type="text" name="designation" id="designation" class="formbold-form-input" />
+                        </div>
                     </div>
-                    <div>
-                        <label for="company" class="formbold-form-label"> Company/Institute* </label>
-                        <input type="text" name="company" id="company" class="formbold-form-input" />
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="attending" class="formbold-form-label"> Are you attending?* </label>
+                            <select name="attending" id="attending" class="formbold-form-input">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Maybe">Maybe</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
 
-                <div class="formbold-input-flex">
-                    <div>
-                        <label for="designation" class="formbold-form-label"> Designations* </label>
-                        <input type="text" name="designation" id="designation" class="formbold-form-input" />
-                    </div>
-                </div>
-                <div class="formbold-input-flex">
-                    <div>
-                        <label for="attending" class="formbold-form-label"> Are you attending?* </label>
-                        <select name="attending" id="attending" class="formbold-form-input">
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                            <option value="Maybe">Maybe</option>
-                        </select>
-                    </div>
-                </div>
-
-<!-- 
+                    <!-- 
                 <p class="formbold-policy">
                     By filling out this form and clicking submit, you acknowledge our
                     <a href="#">privacy policy.</a>
                 </p> -->
 
-                <button class="formbold-btn">Submit Event Registration</button>
-            </form>
+                    <button class="formbold-btn">Submit Event Registration</button>
+                </form>
+            </div>
+
+
 
             <!-- Script for form submission -->
             <script>
                 const regForm = document.getElementById('regForm');
-                regForm.addEventListener('submit',(e)=>{
+                regForm.addEventListener('submit', (e) => {
                     e.preventDefault();
-         
-                    let email=document.getElementById("email");
-                    let phone=document.getElementById("phone");
-                    let affiliation=document.getElementById("affiliation");
-                    let company=document.getElementById("company");
-                    let designaion=document.getElementById("designation");
-                    let attending=document.getElementById("attending");
-                    let lastname=document.getElementById("lastname");
-    
-                    let link=""
-             
-                        if(lastname==""||email==""||phone==""||affiliation==""||company==""||designaion==""||attending==""){
-                            alert("One or more fields empty");
-                        }
-                        else{
-                            link="https://docs.google.com/forms/d/e/1FAIpQLSdcB0WALoDQUmRoghH1bx9Pcm_URhX5fbEgxBE22xUDHnyp3A/viewform?entry.1671981725="+lastname.value.replace(" ","%20").trim()+"&entry.703421147="+email.value.trim()+"&entry.276599312="+company.value.replace(" ","%20").trim()+"&entry.813673043="+designaion.value.replace(" ","%20").trim()+"&entry.1586955344="+phone.value.replace(" ","%20").trim()+"&entry.610373699="+affiliation.value.replace(" ","%20").trim()+"&entry.1455028531="+attending.value.replace(" ","%20").trim();
-                            window.location.href=link;
-                        }
+
+                    let email = document.getElementById("email");
+                    let phone = document.getElementById("phone");
+                    let affiliation = document.getElementById("affiliation");
+                    let company = document.getElementById("company");
+                    let designaion = document.getElementById("designation");
+                    let attending = document.getElementById("attending");
+                    let lastname = document.getElementById("lastname");
+
+                    let link = ""
+
+                    if (lastname == "" || email == "" || phone == "" || affiliation == "" || company == "" || designaion == "" || attending == "") {
+                        alert("One or more fields empty");
+                    }
+                    else {
+                        link = "https://docs.google.com/forms/d/e/1FAIpQLSdcB0WALoDQUmRoghH1bx9Pcm_URhX5fbEgxBE22xUDHnyp3A/viewform?entry.1671981725=" + lastname.value.replace(" ", "%20").trim() + "&entry.703421147=" + email.value.trim() + "&entry.276599312=" + company.value.replace(" ", "%20").trim() + "&entry.813673043=" + designaion.value.replace(" ", "%20").trim() + "&entry.1586955344=" + phone.value.replace(" ", "%20").trim() + "&entry.610373699=" + affiliation.value.replace(" ", "%20").trim() + "&entry.1455028531=" + attending.value.replace(" ", "%20").trim();
+                        window.location.href = link;
+                    }
 
                 })
             </script>
@@ -263,14 +260,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 48px;
+            padding: 40px;
         }
 
         .formbold-form-wrapper {
             margin: 0 auto;
-            max-width: 550px;
+            max-width: 1300px;
             width: 100%;
             background: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+        }
+
+        .formbold-event-wrapper {
+            margin-right: 120px;
+        }
+        @media screen and (max-width: 1020px) {
+            .formbold-form-wrapper {
+                display: unset;
+        }
+        .formbold-event-wrapper {
+            margin-right: unset;
+        }
         }
 
         .formbold-event-wrapper span {
@@ -347,7 +358,8 @@
             font-weight: 600;
             font-size: 28px;
             line-height: 35px;
-            width: 60%;
+            
+            margin-top: 95px;
             margin-bottom: 30px;
         }
 
@@ -402,7 +414,6 @@
 
         .formbold-btn {
             text-align: center;
-            width: 100%;
             font-size: 16px;
             border-radius: 5px;
             padding: 14px 25px;
@@ -567,6 +578,5 @@
 </html>
 
 <!-- 
-
 https://docs.google.com/forms/d/e/1FAIpQLSdcB0WALoDQUmRoghH1bx9Pcm_URhX5fbEgxBE22xUDHnyp3A/viewform?entry.1671981725=Dipayan Das&entry.703421147=d.dipayan2002@gmail.com&entry.276599312=<company>&entry.813673043=<designation>&entry.1586955344=<ph>&entry.610373699=Industry&entry.1455028531=lol
  -->
